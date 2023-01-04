@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,400&family=Poiret+One&display=swap');
+
+:root{
+  --prime-font: 'Nunito Sans', sans-serif;
+  --style-font: 'Poiret One', cursive;
+  --accent-color:#80d5ff;
+  --bg-color:#000919;
+  --box-shadow: 2px 2px #80d5ff;
+  --big-box-shadow: 5px 5px 0 #80d5ff;
+}
+*{
+  box-sizing: border-box;
+  font-family:var(--prime-font);
+  color:var(--accent-color)
+}
+body{
+  background-color: var(--bg-color);
+}
+.main-head{
+  font-family: var(--style-font);
+}
+.main-sec{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap:.5rem;
+}
+nav{
+  display:flex;
+  justify-content: space-between;
+}
+nav>h1{
+  display:inline; 
+  margin:0;
+  padding:0;
+}
+nav::after{
+  position:absolute;
+  top:2.5rem;
+  content:"";
+  height:1px;
+  background-color: var(--accent-color);
+  width:100%;
+}
+.links{
+  display:flex;
+  justify-content: flex-end;
+  align-items:center;
+  gap:1rem;
+}
+a{
+  text-decoration : none;
+}
+a:hover{
+ transform: scale(1.05);
+ transition:0.2s;
+}
+.ques-container{
+  border:2px solid black;
+  border-radius:5px;
+  padding:2rem;
+  margin-bottom:2rem;
+}
+button{
+  margin-left:6.5rem;
+  padding:0.3rem 1rem;
+  box-shadow: var(--box-shadow);
+  background-color:var(--bg-color);
+}
+input{
+  height:1.5rem;
+  border: 1px solid var(--accent-color);
+  border-radius:2px;
+  background-color: var(--bg-color);
+  box-shadow:var(--box-shadow);
+}
+/* quiz app */
+.radio{
+  position:relative;
+  top:0.4rem;
+  box-shadow: none;
+  background-color: var(--accent-color);
+}
